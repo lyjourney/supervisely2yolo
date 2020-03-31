@@ -1,9 +1,11 @@
 Getting Started
 ---------------
 ```
-$ git clone https://github.com/lyjourney/video2frame.git
-$ cd video2frame
-$ python3 conv2yolo.py --source_dir <name> [--dest_dir <name>] [--checker]
+1.  Make annotion on the https://supervise.ly/
+
+2.  $ git clone https://github.com/lyjourney/video2frame.git
+    $ cd supervisely2yolo
+    $ python3 conv2yolo.py --source_dir <name> [--dest_dir <name>] [--checker]
 ```
 Usage example
 -------------
