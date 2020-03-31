@@ -7,7 +7,7 @@ Getting Started
     $ cd supervisely2yolo
     $ python3 conv2yolo.py --source_dir <name> [--dest_dir <name>] [--checker]
 ```
-Usage example
+Usage Example
 -------------
 ```
 $ python3 conv2yolo.py \
@@ -33,7 +33,7 @@ supervisely2yolo/
         ┗━ [img]
           :
 ```
-Python package list
+Python Package List
 -------------------
 * cv2
 * shutil
