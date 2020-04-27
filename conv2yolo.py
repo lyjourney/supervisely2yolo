@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 class STOY:
 
-    def __init__(self, source_dir, dest_dir, checker):
+    def __init__(self, source_dir, dest_dir, class_names, checker):
         self.source = source_dir
         self.dest = dest_dir
 
@@ -26,7 +26,7 @@ class STOY:
 
         self.source_list = []
 
-        cls = open('car_people.names', "r")
+        cls = open(class_names, "r")
         CLASSES = cls.readlines()
         CLASSES = [_.split('\n')[0] for _ in CLASSES]
         self.class_to_ind = dict(zip(CLASSES, range(len(CLASSES))))
@@ -176,6 +176,9 @@ if __name__ == '__main__':
     parser.add_argument("--dest_dir", default = "convert", type = str,
             help = "destination directory")
 
+    parser.add_argument("--name", default = "class.names", type = str,
+            help = "class name")
+
     parser.add_argument("--checker", action = 'store_true',
             help = "checking the result of anntation through images")
 
@@ -186,6 +189,6 @@ if __name__ == '__main__':
         print("Please check your source_dir.\n")
         sys.exit()
 
-    stoy = STOY(args.source_dir, args.dest_dir, args.checker)
+    stoy = STOY(args.source_dir, args.dest_dir, args.name, args.checker)
 
     stoy.run()
