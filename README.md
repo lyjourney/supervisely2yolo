@@ -28,10 +28,11 @@ supervisely2yolo/
     ┃   ┣━ ann
     ┃   ┗━ [img] # optional (+ --checker)
     ┃
-    ┗━ folder2
-        ┣━ ann
-        ┗━ [img]
-          :
+    ┣━ folder2
+    ┃   ┣━ ann
+    ┃   ┗━ [img]
+    ┃
+    ┗━ ...    
 ```
 Python Package List
 -------------------
