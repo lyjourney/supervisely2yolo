@@ -5,7 +5,7 @@ Getting Started
 
 2.  $ git clone https://github.com/lyjourney/video2frame.git
     $ cd supervisely2yolo
-    $ python3 conv2yolo.py --source_dir <name> [--dest_dir <name>] [--checker]
+    $ python3 conv2yolo.py --source_dir <name> [--dest_dir <name>] [--name <name>] [--checker]
 ```
 Usage Example
 -------------
@@ -13,6 +13,7 @@ Usage Example
 $ python3 conv2yolo.py \
   --source_dir project \
   --dest_dir convert \
+  --name class.names \
   --checker
 ```
 
