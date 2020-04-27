@@ -24,10 +24,10 @@ supervisely2yolo/
 ┣━ class.names
 ┣━ conv2yolo.py
 ┗━ project/
-    ┗━ folder1
-        ┣━ ann
-        ┗━ [img] # optional (+ --checker)
-    
+    ┣━ folder1
+    ┃   ┣━ ann
+    ┃   ┗━ [img] # optional (+ --checker)
+    ┃
     ┗━ folder2
         ┣━ ann
         ┗━ [img]
